@@ -1,0 +1,44 @@
+button.position-absolute {
+    right: 1rem;
+    top: 1rem;
+    z-index:99;
+}
+
+nav{
+    background-color: dimgrey;
+    font-family: "Open Sans Condensed";
+    font-weight: 300;
+}
+
+nav div img {
+    margin-left: -15px;
+    margin-top: -35px;
+    position: absolute;
+}
+
+header{
+    background-color: darkkhaki;
+    margin-bottom: -10px; 
+}
+
+h1{
+    margin-left: 20px;
+    color: ghostwhite;
+    font-family: "Josefin Sans";
+    font-weight: 400;
+}
+
+main div p{
+    font-size: 20px;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    margin-top: 8px;
+    margin-left: 2px;
+}
+
+
+footer{
+    background-color: darkkhaki;
+    font-family: "Open Sans Condensed";
+    font-weight: 300;
+}

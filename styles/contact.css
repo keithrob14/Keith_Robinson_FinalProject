@@ -1,0 +1,58 @@
+button.position-absolute {
+    right: 1rem;
+    top: 1rem;
+    z-index:99;
+}
+
+nav{
+    background-color: dimgrey;
+    font-family: "Open Sans Condensed";
+    font-weight: 300;
+}
+
+nav div img {
+    margin-left: -15px;
+    margin-top: -35px;
+    position: absolute;
+}
+
+header{
+    background-color: darkkhaki;
+    margin-bottom: -10px;
+}
+
+h1{
+    margin-left: 20px;
+    color: ghostwhite;
+    font-family: "Josefin Sans";
+    font-weight: 400;
+}
+
+/* CSS for Contact Page */
+
+form{
+    padding-left: 1em;
+    font-family: "Open Sans Condensed";
+    font-weight: 300;
+}
+
+main p{
+    padding-left: 10px;
+    font-style: italic;
+    font-family: "Open Sans Condensed";
+    font-weight: 600;
+    font-size: 18px;
+}
+
+div input{
+    margin-bottom: 10px;
+}
+/* End CSS for Contact Page */
+
+
+
+footer{
+    background-color: darkkhaki;
+    font-family: "Open Sans Condensed";
+    font-weight: 300;
+}

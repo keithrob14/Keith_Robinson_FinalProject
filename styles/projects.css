@@ -1,0 +1,42 @@
+button.position-absolute {
+    right: 1rem;
+    top: 1rem;
+    z-index:99;
+}
+
+nav{
+    background-color: dimgrey;
+    font-family: "Open Sans Condensed";
+    font-weight: 300;
+}
+
+nav div img {
+    margin-left: -15px;
+    margin-top: -35px;
+    position: absolute;
+}
+
+header{
+    background-color: darkkhaki;
+    margin-bottom: -10px;
+}
+
+h1{
+    margin-left: 20px;
+    color: ghostwhite;
+    font-family: "Josefin Sans";
+    font-weight: 400;
+}
+
+/* Carousel Projects Page */
+
+.carousel-item img {
+    height: 600px;
+    object-fit: cover;
+}
+
+footer{
+    background-color: darkkhaki;
+    font-family: "Open Sans Condensed";
+    font-weight: 300;
+}
