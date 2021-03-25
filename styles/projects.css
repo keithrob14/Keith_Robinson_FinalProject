@@ -28,13 +28,6 @@ h1{
     font-weight: 400;
 }
 
-/* Carousel Projects Page */
-
-.carousel-item img {
-    height: 600px;
-    object-fit: cover;
-}
-
 footer{
     background-color: darkkhaki;
     font-family: "Open Sans Condensed";
