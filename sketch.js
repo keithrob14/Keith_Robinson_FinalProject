@@ -51,44 +51,7 @@ function draw() {
   
 
   
-    if(dist(aep.x,aep.y,mouseX,mouseY)<=15){
-     fill(0,100);
-    }else{
-      fill(255,100);
-    } 
-   ellipse(aep.x,aep.y,20,15);
-  
-   
-    if(dist(home.x,home.y,mouseX,mouseY)<=15){
-     fill(0,100);
-    }else{
-      fill(255,100);
-    } 
-  ellipse(home.x,home.y,20,15);
-  
-  
-    if(dist(canon.x,canon.y,mouseX,mouseY)<=15){
-     fill(0,100);
-     image('images/canon.jpg',canon.x,canon.y,200,200);
-    }else{
-      fill(255,100);
-    }
-  ellipse(canon.x,canon.y,20,15);
-  
-  
-    if(dist(shawnee.x,shawnee.y,mouseX,mouseY)<=15){
-     fill(0,100);
-    }else{
-      fill(255,100);
-    } 
-  ellipse(shawnee.x,shawnee.y,20,15);
-  
-    if(dist(av.x,av.y,mouseX,mouseY)<=15){
-     fill(0,100);
-    }else{
-      fill(255,100);
-    } 
-  ellipse(av.x,av.y,20,15);
+    
   
   
   
