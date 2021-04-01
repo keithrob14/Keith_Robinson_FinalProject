@@ -1,4 +1,4 @@
-const key = 'pk.eyJ1IjoicG9zdHBsYXN0aWMiLCJhIjoiY2tpamJyNm1zMDE0OTJ0czU5cDkyNjE3ciJ9.VRXSaQR1sQoWudM3Bgp9Lg';
+const key = 'pk.eyJ1Ijoia2VpdGhyb2IxNCIsImEiOiJja20wc3Z4MXcwYzFyMnFxdGQzcW5yM2gwIn0.Zd4sexHlb0zblGiORQl2Tw';
 let img;
 
 const mappa = new Mappa('MapboxGL', key)
@@ -9,8 +9,8 @@ const options= {
   lat: 39.162020,
   lng: -82.681140,
   zoom: 5,
-  style:'mapbox://styles/postplastic/ckm0tepet0s0517qxhwt23r9y', 
-  pitch:40,
+  style:'mapbox://styles/keithrob14/ckmz75bco1d4b17ntgoqsrzbr', 
+  pitch:20,
 };
 
 
