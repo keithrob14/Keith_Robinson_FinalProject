@@ -8,9 +8,9 @@ let canvas;
 const options= {
   lat: 39.162020,
   lng: -82.681140,
-  zoom: 5,
+  zoom: 6,
   style:'mapbox://styles/keithrob14/ckmz75bco1d4b17ntgoqsrzbr', 
-  pitch:20,
+  pitch:40,
 };
 
 
@@ -20,7 +20,6 @@ function setup() {
   myMap.overlay(canvas);
   //greenhouse = loadTable('Greenhouse_Data.csv','csv','header')
   img = createImg('images/meadowhollow.jpg');
-  img2 = createImg('images/canon.jpg');
   img.hide();
 }
 
@@ -33,29 +32,54 @@ function draw() {
   strokeWeight(2);
   const zoom = myMap.zoom();
   const meadowhollow = myMap.latLngToPixel(39.162020,-82.681140);
-  const aep = myMap.latLngToPixel(39.703600, -81.683414);
-  const home = myMap.latLngToPixel(40.339175, -82.416691);
-  const canon = myMap.latLngToPixel(38.630889, -82.650441);
-  const shawnee = myMap.latLngToPixel(38.675166, -83.151572);
-  const av = myMap.latLngToPixel(40.414123, -82.367495);
+  const morganco = myMap.latLngToPixel(39.531925, -81.943712);
+  const Columbus = myMap.latLngToPixel(39.996891, -82.809103);
+  const adamsco = myMap.latLngToPixel(38.679044, -83.424200);
+  
   
   
   
   if(dist(meadowhollow.x,meadowhollow.y,mouseX,mouseY)<=15){
    fill(0,100);
-   image(img,meadowhollow.x,meadowhollow.y,200,200);
+   image('images/Meadow Hollow.jpg',meadowhollow.x,meadowhollow.y,200,200);
   }else{
     fill(255,100);
   }
   ellipse(meadowhollow.x,meadowhollow.y,20,15);
-  
-
+    
+    
+    
+ if(dist(morganco.x,morganco.y,mouseX,mouseY)<=15){
+   fill(0,100);
+   image('images/Morgan County.jpg',morganco.x,morganco.y,200,200);
+  }else{
+    fill(255,100);
+  }
+  ellipse(morganco.x,morganco.y,20,15);
+    
+    
+    
+ if(dist(Columbus.x,Columbus.y,mouseX,mouseY)<=15){
+   fill(0,100);
+   image('images/Columbus.jpg',Columbus.x,Columbus.y,200,200);
+  }else{
+    fill(255,100);
+  }
+  ellipse(Columbus.x,Columbus.y,20,15);
+    
+    
+    
+    
+ if(dist(adamsco.x,adamsco.y,mouseX,mouseY)<=15){
+   fill(0,100);
+   image('images/Adams County.jpg',adamsco.x,adamsco.y,200,200);
+  }else{
+    fill(255,100);
+  }
+  ellipse(adamsco.x,adamsco.y,20,15);
   
     
-  
-  
-  
-
+      
   print(zoom);
 }
 
