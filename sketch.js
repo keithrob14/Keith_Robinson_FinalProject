@@ -8,12 +8,17 @@ const options = {
   pitch: 40
 };
 
+
 const mappa = new Mappa('MapboxGL', key);
 let myMap;
 let canvas;
+//var gui;
 
 
 function setup() {
+  //gui = new Gui();
+  //let gui_setup = new dat.GUI();
+  //gui_setup.add(gui,'size',1,50).step(1);
   canvas = createCanvas(windowWidth, windowHeight);
   myMap = mappa.tileMap(options);
   myMap.overlay(canvas);
@@ -26,6 +31,8 @@ function setup() {
   img2.hide();
   img3.hide();
   img4.hide();
+    
+  
 }
 
 
@@ -41,12 +48,12 @@ function draw() {
   const adamsco = myMap.latLngToPixel(38.679044, -83.424200);
   
   
-  ellipse(meadowhollow.x, meadowhollow.y, 2 * zoom, 2 * zoom);
+  ellipse(meadowhollow.x, meadowhollow.y, 4 * zoom, 4 * zoom);
   if (dist(meadowhollow.x, meadowhollow.y, mouseX, mouseY) < (zoom * 10) / 2) {
-    textSize(10);
+    textSize(15);
     noFill();
     strokeWeight(1);
-    textAlign(CENTER, TOP);
+    textAlign(CENTER, BOTTOM);
     text("Meadow Hollow is Larry Helmers' farm where experimental property management projects like prescribed burns and TSI jobs can be done to prove the concept of wildlife habitat restoration",meadowhollow.x,meadowhollow.y);
     image(img,meadowhollow.x,meadowhollow.y,200,200);
      fill(0, 100);
@@ -56,7 +63,7 @@ function draw() {
   
   
   
-    ellipse(morganco.x, morganco.y, 2 * zoom, 2 * zoom);
+    ellipse(morganco.x, morganco.y, 4 * zoom, 4 * zoom);
   if (dist(morganco.x, morganco.y, mouseX, mouseY) < (zoom * 10) / 2) {
     textSize(10);
     noFill();
@@ -70,7 +77,7 @@ function draw() {
   
   
   
-    ellipse(columbus.x, columbus.y, 2 * zoom, 2 * zoom);
+    ellipse(columbus.x, columbus.y, 4 * zoom, 4 * zoom);
   if (dist(columbus.x, columbus.y, mouseX, mouseY) < (zoom * 10) / 2) {
     textSize(10);
     noFill();
@@ -84,7 +91,7 @@ function draw() {
   
   
   
-    ellipse(adamsco.x, adamsco.y, 2 * zoom, 2 * zoom);
+    ellipse(adamsco.x, adamsco.y, 4 * zoom, 4 * zoom);
   if (dist(adamsco.x, adamsco.y, mouseX, mouseY) < (zoom * 10) / 2) {
     textSize(10);
     noFill();
@@ -98,7 +105,9 @@ function draw() {
     
    
 }
-  
+
+
+
   
  
 
