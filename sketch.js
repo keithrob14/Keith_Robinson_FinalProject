@@ -8,7 +8,12 @@ const options = {
   pitch: 40
 };
 
+let text1= "Meadow Hollow is Larry Helmers' farm where experimental property management projects like prescribed burns and TSI jobs can be done to prove the concept of wildlife habitat restoration."
+let text2= "Native Landscapes works with local contractors to help clear areas for future building sites while keeping in mind the impact on the surrounding environment."
+let text3= "Native Landscapes works in more domestic scenarios for classical tree care and traditional landscaping as well."
+let text4= "Native Landscapes specializes in improving wildlife habitat on clients propoerties to improve hunting and to generally improve habitat for wildlife on surrounding properties."
 
+    
 const mappa = new Mappa('MapboxGL', key);
 let myMap;
 let canvas;
@@ -50,57 +55,70 @@ function draw() {
   
   ellipse(meadowhollow.x, meadowhollow.y, 4 * zoom, 4 * zoom);
   if (dist(meadowhollow.x, meadowhollow.y, mouseX, mouseY) < (zoom * 10) / 2) {
+    
     textSize(15);
     noFill();
     strokeWeight(1);
     textAlign(CENTER, BOTTOM);
-    text("Meadow Hollow is Larry Helmers' farm where experimental property management projects like prescribed burns and TSI jobs can be done to prove the concept of wildlife habitat restoration",meadowhollow.x,meadowhollow.y);
+    fill(100);
+    rect(0,0,windowWidth, 80);
+    fill(255);
+    text(text1,windowWidth/2,50);
     image(img,meadowhollow.x,meadowhollow.y,200,200);
-     fill(0, 100);
-  } else {
-    fill(255, 100);
-  }
+     
+  } 
   
   
   
-    ellipse(morganco.x, morganco.y, 4 * zoom, 4 * zoom);
+ ellipse(morganco.x, morganco.y, 4 * zoom, 4 * zoom);
   if (dist(morganco.x, morganco.y, mouseX, mouseY) < (zoom * 10) / 2) {
-    textSize(10);
+    
+    textSize(15);
     noFill();
     strokeWeight(1);
-    text("this is morgan county",meadowhollow.x,meadowhollow.y);
+    textAlign(CENTER, BOTTOM);
+    fill(100);
+    rect(0,0,windowWidth, 80);
+    fill(255);
+    text(text2,windowWidth/2,50);
     image(img2,morganco.x,morganco.y,200,200);
-     fill(0, 100);
-  } else {
-    fill(255, 100);
-  }
+     
+  }   
   
-  
-  
-    ellipse(columbus.x, columbus.y, 4 * zoom, 4 * zoom);
+   ellipse(columbus.x, columbus.y, 4 * zoom, 4 * zoom);
   if (dist(columbus.x, columbus.y, mouseX, mouseY) < (zoom * 10) / 2) {
-    textSize(10);
+    
+    textSize(15);
     noFill();
     strokeWeight(1);
-    text("this is blacklick",columbus.x,columbus.y);
+    textAlign(CENTER, BOTTOM);
+    fill(100);
+    rect(0,0,windowWidth, 80);
+    fill(255);
+    text(text3,windowWidth/2,50);
     image(img3,columbus.x,columbus.y,200,200);
-     fill(0, 100);
-  } else {
-    fill(255, 100);
+     
   }
   
   
   
-    ellipse(adamsco.x, adamsco.y, 4 * zoom, 4 * zoom);
+   ellipse(adamsco.x, adamsco.y, 4 * zoom, 4 * zoom);
   if (dist(adamsco.x, adamsco.y, mouseX, mouseY) < (zoom * 10) / 2) {
-    textSize(10);
+    
+    textSize(15);
     noFill();
     strokeWeight(1);
-    text("this is adams county",adamsco.x,adamsco.y);
+    textAlign(CENTER, BOTTOM);
+    fill(100);
+    rect(0,0,windowWidth, 80);
+    fill(255);
+    text(text4,windowWidth/2,50);
     image(img4,adamsco.x,adamsco.y,200,200);
-     fill(0, 100);
-  } else {
-    fill(255, 100);
+     
+  } 
+    else {
+    fill(200, 50);
+    strokeWeight(2);
   }
     
    
