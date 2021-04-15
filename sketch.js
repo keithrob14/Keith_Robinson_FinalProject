@@ -5,19 +5,22 @@ const options = {
   lng: -82.681140,
   zoom: 6,
   style: 'mapbox://styles/keithrob14/ckmz75bco1d4b17ntgoqsrzbr',
-  pitch: 40
+  pitch: 45
 };
 
 let text1= "Meadow Hollow is Larry Helmers' farm where experimental property management projects like prescribed burns and TSI jobs can be done to prove the concept of wildlife habitat restoration."
 let text2= "Native Landscapes works with local contractors to help clear areas for future building sites while keeping in mind the impact on the surrounding environment."
 let text3= "Native Landscapes works in more domestic scenarios for classical tree care and traditional landscaping as well."
-let text4= "Native Landscapes specializes in improving wildlife habitat on clients propoerties to improve hunting and to generally improve habitat for wildlife on surrounding properties."
+let text4= "Native Landscapes specializes in improving wildlife habitat on clients properties to improve hunting and to generally improve habitat for wildlife on surrounding properties."
 
     
 const mappa = new Mappa('MapboxGL', key);
 let myMap;
 let canvas;
 //var gui;
+
+var imgArray = [];
+var csvImages = 4;
 
 
 function setup() {
@@ -45,7 +48,7 @@ function draw() {
    clear();
   //noFill();
   stroke(0);
-  strokeWeight(5);
+  strokeWeight(3);
   const zoom = myMap.zoom();
   const meadowhollow = myMap.latLngToPixel(39.162020,-82.681140);
   const morganco = myMap.latLngToPixel(39.531925, -81.943712);
@@ -53,7 +56,7 @@ function draw() {
   const adamsco = myMap.latLngToPixel(38.679044, -83.424200);
   
   
-  ellipse(meadowhollow.x, meadowhollow.y, 4 * zoom, 4 * zoom);
+  ellipse(meadowhollow.x, meadowhollow.y, 2 * zoom, 10);
   if (dist(meadowhollow.x, meadowhollow.y, mouseX, mouseY) < (zoom * 10) / 2) {
     
     textSize(15);
@@ -64,13 +67,14 @@ function draw() {
     rect(0,0,windowWidth, 80);
     fill(255);
     text(text1,windowWidth/2,50);
+    textFont('Helvetica');
     image(img,meadowhollow.x,meadowhollow.y,200,200);
      
   } 
   
   
   
- ellipse(morganco.x, morganco.y, 4 * zoom, 4 * zoom);
+ ellipse(morganco.x, morganco.y, 2 * zoom, 10);
   if (dist(morganco.x, morganco.y, mouseX, mouseY) < (zoom * 10) / 2) {
     
     textSize(15);
@@ -81,11 +85,12 @@ function draw() {
     rect(0,0,windowWidth, 80);
     fill(255);
     text(text2,windowWidth/2,50);
+    textFont('Helvetica');
     image(img2,morganco.x,morganco.y,200,200);
      
   }   
   
-   ellipse(columbus.x, columbus.y, 4 * zoom, 4 * zoom);
+   ellipse(columbus.x, columbus.y, 2 * zoom, 10);
   if (dist(columbus.x, columbus.y, mouseX, mouseY) < (zoom * 10) / 2) {
     
     textSize(15);
@@ -96,13 +101,14 @@ function draw() {
     rect(0,0,windowWidth, 80);
     fill(255);
     text(text3,windowWidth/2,50);
+    textFont('Helvetica');
     image(img3,columbus.x,columbus.y,200,200);
      
   }
   
   
   
-   ellipse(adamsco.x, adamsco.y, 4 * zoom, 4 * zoom);
+   ellipse(adamsco.x, adamsco.y, 2 * zoom, 10);
   if (dist(adamsco.x, adamsco.y, mouseX, mouseY) < (zoom * 10) / 2) {
     
     textSize(15);
@@ -113,12 +119,14 @@ function draw() {
     rect(0,0,windowWidth, 80);
     fill(255);
     text(text4,windowWidth/2,50);
+    textFont('Helvetica');
     image(img4,adamsco.x,adamsco.y,200,200);
      
   } 
     else {
     fill(200, 50);
     strokeWeight(2);
+    stroke(100);
   }
     
    
