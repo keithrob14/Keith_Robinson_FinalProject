@@ -8,10 +8,10 @@ const options = {
   pitch: 45
 };
 
-let text1= "Meadow Hollow is Larry Helmers' farm where experimental property management projects like prescribed burns \n and TSI jobs can be done to prove the concept of wildlife habitat restoration. Small workshops can be held at this experimental property for \n clients interested in improving wildlife habitat in a natural manner that lines up with the native, evolutionary timeline of their respective locale."
-let text2= "Native Landscapes works with local contractors to help clear areas for future building sites while keeping in mind the impact on the surrounding environment.\n This image shows an example of a job done through Native Landscapes using local contractors \n to create a clearing to start construction on a cabin for the landowner."
+let text1= "Meadow Hollow is Larry Helmers' farm where experimental property management projects like prescribed burns and TSI jobs can be done to prove \n  the concept of wildlife habitat restoration. Small workshops can be held at this experimental property for clients interested in improving \n wildlife habitat in a natural manner that lines up with the native, evolutionary timeline of their respective locale."
+let text2= "Native Landscapes works with local contractors to help clear areas for future building sites while keeping in mind \n the impact on the surrounding environment.This image shows an example of a job done through Native Landscapes using \n local contractors to create a clearing to start construction on a cabin for the landowner."
 let text3= "Native Landscapes works in more domestic scenarios for classical tree care and traditional landscaping as well.\n Native Landscapes has ample experience in close quarters tree care and high-end landscaping incorporating native species\n into urban landscaping practices to stand out from typical landscaping practice."
-let text4= "Native Landscapes specializes in improving wildlife habitat on clients properties to improve hunting and to generally improve habitat for wildlife on surrounding properties.\n This is the greatest specialty of Native Landscapes due to the great deal of passion and experience \n Larry Helmers has with a wide range of habitat improvement for the plants and animals of Ohio. "
+let text4= "Native Landscapes specializes in improving wildlife habitat on clients properties to improve hunting and to generally improve habitat for\n  wildlife on surrounding properties. This is the greatest specialty of Native Landscapes due to the great deal of passion and experience \n Larry Helmers has with a wide range of habitat improvement for the plants and animals of Ohio. "
 
 
 let lines = 'L1\nL2\nL3';
