@@ -43,7 +43,6 @@ function setup() {
   img3.hide();
   img4.hide();
   
-  
 }
 
 
@@ -61,6 +60,9 @@ function draw() {
   
   
   ellipse(meadowhollow.x, meadowhollow.y, 2 * zoom, 10);
+  ellipse(morganco.x, morganco.y, 2 * zoom, 10);
+  ellipse(columbus.x, columbus.y, 2 * zoom, 10);
+  ellipse(adamsco.x, adamsco.y, 2 * zoom, 10);
   if (dist(meadowhollow.x, meadowhollow.y, mouseX, mouseY) < (zoom * 10) / 2) {
     
     textSize(15);
@@ -73,12 +75,12 @@ function draw() {
     text(text1,windowWidth/2,70);
     textFont('Helvetica');
     image(img,meadowhollow.x,meadowhollow.y,scale*width, scale*img.height*width/img.width);
-     
+      
   } 
   
   
   
- ellipse(morganco.x, morganco.y, 2 * zoom, 10);
+
   if (dist(morganco.x, morganco.y, mouseX, mouseY) < (zoom * 10) / 2) {
     
     textSize(15);
@@ -93,7 +95,7 @@ function draw() {
      
   }   
   
-   ellipse(columbus.x, columbus.y, 2 * zoom, 10);
+  
   if (dist(columbus.x, columbus.y, mouseX, mouseY) < (zoom * 10) / 2) {
     
     textSize(15);
@@ -110,7 +112,7 @@ function draw() {
   
   
   
-   ellipse(adamsco.x, adamsco.y, 2 * zoom, 10);
+   
   if (dist(adamsco.x, adamsco.y, mouseX, mouseY) < (zoom * 10) / 2) {
     
     textSize(15);
